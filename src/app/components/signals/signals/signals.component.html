@@ -1,0 +1,18 @@
+<h2>Signals</h2>
+<div style="font-size: 15px; font-family: Arial, Helvetica, sans-serif;">
+Antigamento alteração acontecia via hierarquia. Pai, filho, neto, bisnetoX.
+<br> Com o signal, quando a alteração é feita diretamento no bisnetoX.
+</div>
+<hr>
+<p>{{ firstName() }} {{ lastName() }}</p>
+<p>Full Name: {{ fullName() }}</p>
+
+<ul>
+  @for(item of array(); track item){
+    <li>{{ item }}</li>
+  }
+</ul>
+
+<button (click)="updateName()">Update Name</button>
+<button (click)="updateArray()">Update Array</button>
+<button (click)="clearArray()">Clear Array</button>

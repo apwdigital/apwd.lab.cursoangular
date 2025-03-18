@@ -1,0 +1,64 @@
+<h2>Template</h2>
+<h3>Text Interpolation</h3>
+<p>{{ name }} - {{ age }}</p>
+
+<p>{{ condition }}</p>
+
+<hr />
+<div class="card">
+  <h3>Property binding</h3>
+  <!-- <element [property]='value'></element> -->
+  <button [disabled]="isDisabled">Button</button>
+  <img [src]="srcValue" [alt]="name" [title]="name" height="120" />
+</div>
+
+<div class="card">
+  <h3>Attribute binding</h3>
+  <!-- <element [attr.attribute-you-are-targeting]='value'></element> -->
+  <p [attr.title]="name" [attr.aria-label]="name">APW Digital</p>
+</div>
+
+<div class="card">
+  <h3>Class and Style binding</h3>
+  <p [class.background-red]="age > 32" [class.background-blue]="age < 32">{{ name }}</p>
+  <p [style.text-decoration]="isTextDecoration">{{ age }}</p>
+</div>
+
+<div class="card">
+  <h3>Event binding</h3>
+  <!-- <element (TargetEventName)='TemplateStatement' ></element>-->
+  <button (click)="sum()">+</button>
+  <button (click)="sub()">-</button>
+  <input (keydown.shift.t)="onKeyDown($event)" />
+  <div style="display: none;">
+    <div style="background: red; width: 100px; height: 100px; margin-top: 10px" (mousemove)="onMouseMove($event)"></div>
+  </div>
+</div>
+
+<br>
+<div class="card">
+  <h3>Exemplo: Two-way binding</h3>
+  <input [(ngModel)]="name" /> {{ name }}
+</div>
+
+<br>
+<div class="card">
+  <h3>Exemplo: Diretivas de atributo</h3>
+  <div [ngClass]="{ 'background-red': age > 35, 'background-blue': age < 35 }">
+    Classes condicionais.
+  </div>
+</div>
+
+<div class="card">
+  <div [ngStyle]="{ 
+          color: age > 35 ? '#FFF' : '#000', 
+          'font-size':  age > 35 ? '30px' : '20px',
+          background: age > 35 ? 'red' : 'green',
+    }">
+    Estilo dinâmico.
+  </div>
+</div>
+
+<div style="height: 100px;">
+  <hr>
+</div>

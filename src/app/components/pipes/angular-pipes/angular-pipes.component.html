@@ -1,0 +1,35 @@
+<h2>Angular PIPES</h2>
+<div style="display: none;">
+    <h3>Dates</h3>
+    <a href="https://v17.angular.io/api/common/DatePipe" target="_blank">DatePipe Ref.</a>
+    <ul>
+        <li>Date: {{ date | date: 'medium' }}</li>
+        <li>Date: {{ date | date: 'short' }}</li>
+        <li>Date: {{ date | date: 'MM' }}</li>
+    </ul>
+    <h3>Text</h3>
+    <ul>
+        <li>Name: {{ name | uppercase }}</li>
+    </ul>
+    <h3>Json</h3>
+    <ul>
+        <li>List: {{ list | json }}</li>
+    </ul>
+    <h3>Async</h3>
+    <ul>
+        <li>Async: {{ loadingData$ | async }}</li>
+    </ul>
+</div>
+
+<hr>
+<li>currency: {{ 2000.5 | currency }}</li>
+<li>currency: {{ 2000.5 | currency : "BRL" }}</li>
+<li>number: {{ 2000.5544 | number }}</li>
+<li>number: {{ 2000.5544 | number : "1.1-1" }}</li>
+<li>percent: {{ 0.155 | percent }}</li>
+<li>percent: {{ 0.155 | percent : "1.0-4" }}</li>
+
+<hr>
+customString - lower: {{ nameUpper | customString : "lower" }}
+<br>
+customString - upper: {{ nameLower | customString : "upper" }}
