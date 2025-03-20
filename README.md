@@ -10,3 +10,7 @@ Instrutor: Dener Troquatte :wave: [Linkedin](https://www.linkedin.com/in/dener-s
 # Angular info
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.12.
 
+# Commando Úteis
+_deploy produção_
+
+`$ng build --configuration production --aot`

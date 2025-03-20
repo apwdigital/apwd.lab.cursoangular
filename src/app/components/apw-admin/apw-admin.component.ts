@@ -17,7 +17,9 @@ export class ApwAdminComponent {
     { data: '2025-03-18', descricao: 'Pipes, Projeto Lista de tarefas' },
     { data: '2025-03-17', descricao: 'Review' },
     { data: '2025-03-15', descricao: 'Componentes, Estilos CSS, Templares, Control Flow, Deferrable' },
-    { data: '2025-03-14', descricao: 'Projeto Portifólio' }
+    { data: '2025-03-14', descricao: 'Projeto Portifólio' },
+    { data: '2025-03-18', descricao: 'Comunicação entre componentes, Pipes, Projeto Lista de tarefas' },
+    { data: '2025-03-30', descricao: 'Projeto Lista de tarefas' }
   ];
 }
 
