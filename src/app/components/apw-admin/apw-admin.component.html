@@ -6,54 +6,26 @@
         <li>Aplicar conhecimento na criação do Line5 (MVP)</li>
     </ul>
     <hr>
-    <h3>O que vimos até hoje 18/03</h3>
+    <h3>O que vimos até hoje 20/03</h3>
 
-    <table mat-table class="mat-elevation-z8">
+    <table mat-table class="mat-elevation-z8" style="display: none;">
         <tr>
-            <td mat-cell>
-                Revisão Angular
+            <td mat-cell>                
             </td>
-            <td mat-cell>
-                Componentes
-            </td>
-            <td mat-cell>
-                Estillos CSS
-            </td>
-        </tr>
-        <tr>
-            <td mat-cell>
-                Templates
-            </td>
-            <td mat-cell>
-                Control Flow
-            </td>
-            <td mat-cell>
-                Deferrable Views
-            </td>
-        </tr>
-        <tr>
-            <td mat-cell>
-                Signal
-            </td>
-            <td mat-cell>
-                Projeto Portifólio
-            </td>
-            <td mat-cell>
-                Comunicação entre componentes
-            </td>
-        </tr>
-        <tr>
-            <td mat-cell>
-                Pipes
-            </td>
-            <td mat-cell>
-                Projeto Lista de tarefas
-            </td>
-            <td mat-cell>
-
-            </td>
-        </tr>
+        </tr>        
     </table>
+
+    <p class="p-modulos">
+        |
+        @for (
+        modulo of modulos; track modulo.descricao;
+        let i = $index;
+        ) {
+        {{modulo.descricao}} |
+        }
+    </p>
+
+
     <!-- <mat-icon class="icon-display">check_circle_outline</mat-icon> -->
     <hr>
     <h4>Atividades:</h4>
