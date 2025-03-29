@@ -1,0 +1,37 @@
+[git]
+
+
+[variáveis de ambiente]
+ng g environments
+
+[serviços]
+ng g s services/api
+ng g c components/consume-service
+
+[httpclient]
+adicionar provideHttpClient(), dentro de "providers" do arquivo app.config.ts
+
+[rotas]
+importar app.components.imports.RouterOutlet
+ng g c pages/home
+ng g c pages/sobre
+ng g c pages/servicos
+
+- Navegando entre páginas *
+- Parametros *
+- Rota coringa *
+- Rotas filhas *
+- Lazy load component *
+- Lazy load children *
+- Query Params *
+- Router Navigate
+
+[Proteção de rota]
+ng g guard guard/can-activate 
+## CanActivate (trabalha com apenas uma rota)
+## CanMatch (atua em ambos)
+## CanDeactivate (verificação na saída)
+
+[Universal SSR - SSG]
+Server-side rendering
+Motivo: melhor desempenho

@@ -24,7 +24,11 @@ export class ApwAdminComponent {
     { descricao: 'Comunicação entre componentes' },
     { descricao: 'Pipes' },
     { descricao: 'Projeto Lista de tarefas' },
-    { descricao: 'Template driven forms' }
+    { descricao: 'Template driven forms' },
+    { descricao: 'Reactive Forms' },
+    { descricao: 'Componentes avançados' },
+    { descricao: 'Variáveis de ambiente' },
+    { descricao: 'Services' },
   ];
 
   public logsAtividades: Array<{ data: string, descricao: string }> = [
@@ -34,7 +38,12 @@ export class ApwAdminComponent {
     { data: '2025-03-14', descricao: 'Projeto Portifólio' },
     { data: '2025-03-18', descricao: 'Comunicação entre componentes, Pipes, Projeto Lista de tarefas' },
     { data: '2025-03-20', descricao: 'Projeto Lista de tarefas' },
-    { data: '2025-03-20', descricao: 'Template driven forms' }
+    { data: '2025-03-20', descricao: 'Template driven forms' },
+    { data: '2025-03-22, 25 e 28', descricao: 'Reactive Forms' },
+    { data: '2025-03-28', descricao: 'Componentes avançados' },
+    { data: '2025-03-28', descricao: 'Variáveis de ambiente' },   
+    { data: '2025-03-28', descricao: 'Services' },
+    { data: '2025-03-29', descricao: 'Rotas' },
   ];
 }
 

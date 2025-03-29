@@ -1,0 +1,11 @@
+<h2>consume-service2 works!</h2>
+
+<hr>
+
+@for (item of getTask$ | async; track item) {
+<p>{{item.id}} | {{item.title}}</p>
+} @empty {
+    <h4>Loading...</h4>
+}
+
+<!-- {{getTask$ | async | json}} -->

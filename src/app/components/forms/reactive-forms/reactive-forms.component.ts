@@ -32,6 +32,10 @@ function textValidator(): ValidatorFn {
   styleUrl: './reactive-forms.component.scss',
 })
 export class ReactiveFormsComponent {
+
+  // de 
+  // privite fb_
+  // para # = propriedade private
   #fb = inject(FormBuilder);
 
   public profileForm = this.#fb.group({
