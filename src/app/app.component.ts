@@ -23,7 +23,8 @@ import { ConsumeService2Component } from "./components/consume-service2/consume-
   imports: [
     RouterOutlet,
     CommonModule,
-    ApwAdminComponent
+    ApwAdminComponent,
+    AngularPipesComponent
 ],
   styleUrls: [],
   styles: [`
@@ -72,8 +73,9 @@ import { ConsumeService2Component } from "./components/consume-service2/consume-
       </app-host-elements>       
       <app-consume-service2>
         -->
-      <h2>Rotas</h2>
-      <router-outlet></router-outlet>
+        <app-angular-pipes/>
+      <!-- <h2>Rotas</h2>
+      <router-outlet></router-outlet> -->
   `
 })
 export class AppComponent {

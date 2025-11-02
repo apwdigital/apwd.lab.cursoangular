@@ -5,7 +5,7 @@
 ng g environments
 
 [serviços]
-ng g s services/api
+ng g s services/api3
 ng g c components/consume-service
 
 [httpclient]

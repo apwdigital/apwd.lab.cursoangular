@@ -9,22 +9,17 @@ import { CommonModule } from '@angular/common';
   templateUrl: './consume-service2.component.html',
   styleUrl: './consume-service2.component.scss'
 })
-export class ConsumeService2Component implements OnInit{
+export class ConsumeService2Component implements OnInit {
 
   #ApiService = inject(Api2Service);
+  public getTask = signal<null | Array<{ id: string; title: string; }>>(null);
+  public getTask$ = this.#ApiService.getTasks();
 
-    public getTask = signal<null | Array<{
-      id: string;
-      title: string;
-    }>>(null);
-    
-    public getTask$ = this.#ApiService.getTasks();
-  
   ngOnInit(): void {
     this.getTask$.subscribe({
-      next: (data: any) => {        
+      next: (data: any) => {
         this.getTask.set(data);
-      },      
+      },
       error: (error) => console.log(`error: ${error}`),
       complete: () => console.log("Complete!")
     })
